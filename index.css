@@ -1,0 +1,208 @@
+html
+{
+	height:100%;
+	padding:0;
+	margin:0;
+}
+body
+{	
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	color:gray;
+	font-family: Arial;
+}
+
+header
+{
+	width:100%;
+	height:40px;
+	margin:0;
+	padding:10px 20px;
+	background-color:rgb(241, 241, 241);
+	outline: (102, 102, 102);
+}
+#logo
+{
+	display: inline-block;
+	width:75px;
+	height:30px;
+	background-image: url("img/logo.png");
+	background-position:-30px -80px;
+	transform:translateY(0);
+
+}
+#searchArea
+{
+	resize:none;
+	padding:5px 10px;
+	font-size: 14px;
+	font-family: Arial;
+	margin-left: 20px;
+	height: 22px;
+	padding-top: 8px;
+	width:500px;
+	border-color:lightgray;
+
+}
+.iconMini
+{position: absolute;
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	background:black;
+	background-image: url("img/logo.png");
+	background-position:-30px -80px;
+	top:14px;
+
+	transform:translateX(-75px);
+
+}
+.iconMini:nth-of-type(2)
+{
+	background:red;
+	transform:translateX(-40px);
+}
+
+#searchBtn
+{
+	display: inline-block;
+	width:38px;
+	height: 38px;
+	margin-left: -4px;
+	background:dodgerblue;
+	background-image: url("img/logo.png");
+	background-position:-99px -48px;
+	border:none;
+		outline:6px solid dodgerblue;
+		outline-offset:-6px;
+
+}
+
+#navmenu
+{
+
+	width:100%;
+	height:40px;
+	margin:0;
+	padding:5px 20px;
+	padding-left: 120px;
+	border-bottom:1px solid #CCCCCC;
+	vertical-align: middle;
+}
+#nav
+{
+	display: flex;
+	justify-content:space-around;
+	width: 550px;
+	height:30px;
+	margin-top:3px;
+	margin-left: -10px;
+	align-items:center;
+}
+
+.navRef
+{
+	position: relative;
+	text-decoration: none;
+	color:inherit;
+}
+
+.navRef:hover
+{
+	color:black;
+}
+
+.active
+{
+	color:dodgerblue;
+	font-weight: bold;
+}
+
+.active:hover
+{
+	color:dodgerblue;
+
+}
+
+.active:after
+{
+	content:"";
+	position: absolute;
+	width:35px;
+	height:2px;
+	background-color: dodgerblue;
+	top:30px;
+	left:-6px;
+}
+
+#content
+{
+	box-sizing:border-box;
+	padding-top:10px;
+	width:100%;
+	  min-height: 85%;
+	padding-left: 120px;
+	padding-right:40%;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 60px;
+
+}
+
+.result
+{
+	width:460px;
+	margin:20px 0 ;
+}
+
+.titleRes
+{
+	display:block;
+	font-size:16px;
+	color:#333399;
+}
+
+.refRes
+{
+	display:block;
+	font-size:12px;
+	color:green;
+}
+
+.textRes
+{
+	font-size:12px;
+	color: #333333
+}
+
+#oftenSearch
+{
+	color:inherit;
+	font-size: 16px;
+	border-top:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#oftenSearch a
+{
+	display:block;
+	text-decoration:none;
+	font-size:12px;
+	font-weight: bold;
+	color:#333399;
+	margin:10px 0;
+}
+
+footer
+{
+	clear: both;
+	width:100%;
+	height:60px;
+	margin:0;
+	padding:10px 20px;
+	background-color: rgb(241, 241, 241);
+	margin-top:-50px;
+}
